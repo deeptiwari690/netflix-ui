@@ -1,0 +1,12 @@
+.c-site-logo {
+  width: 5.5625rem;
+  height: 1.5rem;
+  color: var(--clr-brand-primary);
+}
+
+@media (min-width: 960px) {
+  .c-site-logo {
+    width: 9.25rem;
+    height: 2.5rem;
+  }
+}

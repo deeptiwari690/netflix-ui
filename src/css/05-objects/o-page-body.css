@@ -1,0 +1,36 @@
+.o-page-body {
+  width: 100%;
+  max-width: 120rem;
+  margin-inline: auto;
+  margin-top: -3rem;
+  padding: 0 1.5rem;
+  z-index: var(--z-root__page-body);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 600px) {
+  .o-page-body {
+    margin-top: -2rem;
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .o-page-body {
+    padding: 0 5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .o-page-body {
+    padding: 0 9.25rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .o-page-body {
+    padding: 0 22.125rem;
+  }
+}

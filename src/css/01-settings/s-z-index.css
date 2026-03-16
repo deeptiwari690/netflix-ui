@@ -1,0 +1,27 @@
+:root {
+  --z-root__hero: 1;
+  --z-root__page-body: 2;
+
+  --z-hero__lighting: 1;
+  --z-hero__header: 3;
+  --z-hero__hero-outer: 2;
+
+  --z-lighting__spotlight: 1;
+  --z-lighting__edge-light: 2;
+
+  --z-hero-outer__backdrop: 1;
+  --z-hero-outer__inner: 2;
+
+  --z-backdrop__image: 1;
+  --z-backdrop__overlay: 2;
+
+  --z-hero-inner__core: 2;
+  --z-hero-inner__arch: 1;
+
+  --z-page-body__top-10-btn: 1;
+  --z-page-body__top-10-btn--hover: 2;
+
+  --z-top-10-btn__rank: 1; 
+
+  --z-floating-cta: 4;
+}

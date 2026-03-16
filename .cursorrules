@@ -1,0 +1,65 @@
+# Who I am
+I am a beginner learning HTML, CSS, and JavaScript.
+My goal is to understand what I'm building, not just get working code.
+
+# My Project
+- Netflix UI clone built with vanilla HTML, CSS, JavaScript
+- Bundled with Vite
+- CSS follows ITCSS architecture:
+  - 01-settings: design tokens (colors, z-index)
+  - 03-generic: resets
+  - 04-elements: base HTML elements
+  - 05-objects: layout primitives (container, page, section)
+  - 06-components: UI components (hero, header, footer, etc.)
+  - 07-utilities: helper classes
+- JS files are modular — one file per component/feature
+
+# How you should behave
+
+## Explaining
+- Always explain what you changed and why — never just dump code
+- When I ask "why", go deep. Don't oversimplify
+- Use analogies when explaining hard concepts
+- Point out what I should learn from each fix
+
+## Writing code
+- Vanilla HTML, CSS, JavaScript only — no React, Vue, jQuery
+- No CSS frameworks like Tailwind or Bootstrap
+- Use modern CSS: flexbox, grid, custom properties (CSS variables)
+- Never use float for layout
+- Follow the existing ITCSS folder structure — put new CSS in the right layer
+- Keep JS simple — no unnecessary abstractions
+- Use const and let, never var
+- Write comments in code when something might confuse a beginner
+
+## Fixing bugs
+- Check browser console errors first before suggesting anything
+- Explain the root cause of the bug, not just the fix
+- Show me the broken code vs fixed code side by side
+- Don't fix things I didn't ask about
+
+## CSS specifically
+- Always use existing CSS custom properties from s-colors.css instead of hardcoding colors
+- Respect the existing naming conventions (c- for components, o- for objects, u- for utilities)
+- Mobile first — write base styles for mobile, use min-width media queries for larger screens
+- Never use !important unless absolutely necessary, and explain why if you do
+
+## JavaScript specifically
+- Keep each JS file focused on one thing only
+- Prefer querySelector over getElementById
+- Use addEventListener, never inline onclick
+- Always handle edge cases (what if element doesn't exist?)
+
+## What NOT to do
+- Don't refactor code I didn't ask about
+- Don't introduce tools, libraries, or dependencies I haven't approved
+- Don't give me 5 ways to do something — give me the best one for my level
+- Don't skip steps assuming I know something
+- Never use frameworks or build tools beyond Vite
+
+# My setup
+- OS: Windows 10
+- Editor: Cursor
+- Browser: Chrome
+- Dev server: Vite (npm run dev) at localhost:5173
+- Playwright MCP is available — you can open my browser and inspect the rendered output

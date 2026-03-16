@@ -1,0 +1,48 @@
+.c-btn {
+  background-color: var(--clr-brand-primary);
+  border-radius: 0.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.25rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.c-btn:hover {
+  background-color: var(--clr-brand-primary--hover);
+}
+
+.c-btn--full {
+  display: flex;
+  width: 100%;
+}
+
+.c-btn--lg {
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+
+@media (min-width: 600px) {
+  .c-btn--lg {
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .c-btn--lg {
+    font-size: 1.5rem;
+  }
+}
+
+.c-btn__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+}
