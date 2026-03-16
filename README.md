@@ -1,10 +1,10 @@
 # Netflix UI — India Landing Page
 
 A pixel-faithful recreation of the Netflix India public homepage, built as a
-
 front-end learning project. Focuses on clean CSS architecture, semantic HTML,
-
 and accessible JavaScript interactions.
+
+<img width="1692" height="908" alt="image" src="https://github.com/user-attachments/assets/b177f938-3408-4f90-bed7-69b85efa357a" />
 
 ## Features
 
