@@ -12,6 +12,8 @@ and accessible JavaScript interactions.
 
 - "Trending Now" Top 10 carousel (Swiper)
 
+- Touch-friendly carousel on mobile — navigation controls only shown on desktop (≥960px)
+
 - "More reasons to join" value cards
 
 - FAQ accordion with ARIA accessibility
