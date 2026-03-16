@@ -28,6 +28,8 @@ and accessible JavaScript interactions.
 
 - **ITCSS** — layered CSS architecture (settings → objects → components → utilities)
 
+- **Mobile-first** — responsive design scaling up from 320px
+
 - **Swiper** — carousel library for Top 10 section
 
 ## Getting Started
