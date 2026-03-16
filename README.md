@@ -14,6 +14,8 @@ and accessible JavaScript interactions.
 
 - Touch-friendly carousel on mobile — navigation controls only shown on desktop (≥960px)
 
+- Mobile-first — responsive design scaling up from 320px
+
 - "More reasons to join" value cards
 
 - FAQ accordion with ARIA accessibility
@@ -29,8 +31,6 @@ and accessible JavaScript interactions.
 - **Vanilla HTML, CSS, JavaScript** — no frameworks
 
 - **ITCSS** — layered CSS architecture (settings → objects → components → utilities)
-
-- **Mobile-first** — responsive design scaling up from 320px
 
 - **Swiper** — carousel library for Top 10 section
 
