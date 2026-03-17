@@ -21,9 +21,9 @@
             width="89"
             height="24"
             role="img"
+            aria-label="Netflix"
           >
             <use href="/icons.svg#icon-site-logo"></use>
-            <title>Netflix</title>
           </svg>
 
           <div class="c-header__actions">
@@ -64,11 +64,7 @@
 
         <div class="c-hero__outer">
           <div class="c-hero__backdrop">
-            <img
-              src="/images/img-hero.jpg"
-              aria-hidden="true"
-              class="c-hero__image"
-            >
+            <img src="/images/img-hero.jpg" class="c-hero__image" alt="">
             <div class="c-hero__overlay"></div>
           </div>
           <div class="c-hero__inner">
@@ -78,18 +74,19 @@
                   <h1 class="c-hero__title" id="hero-title">
                     Unlimited movies, shows, and more
                   </h1>
-                  <p class="c-hero__description">
+                  <p class="c-hero__description" role="doc-subtitle">
                     Starts at ₹149. Cancel at any time.
                   </p>
                 </hgroup>
                 <form
                   class="c-cta-bar c-cta-bar--centered"
                   aria-labelledby="hero-cta-bar-title"
+                  data-cta-bar
                 >
-                  <h3 id="hero-cta-bar-title" class="c-cta-bar__title">
+                  <h2 id="hero-cta-bar-title" class="c-cta-bar__title">
                     Ready to watch? Enter your email to create or restart your
                     membership.
-                  </h3>
+                  </h2>
                   <div class="c-cta-bar__actions">
                     <div class="c-cta-bar__input">
                       <label
@@ -138,8 +135,8 @@
       <div class="o-page-body">
         <section class="o-section c-top-10" aria-labelledby="top-10-title">
           <h2 class="c-top-10__title" id="top-10-title">Trending Now</h2>
-          <div class="c-top-10__viewport">
-            <div class="swiper">
+          <div class="c-top-10__viewport" data-top-10-viewport>
+            <div class="swiper" data-top-10-swiper>
               <ul class="swiper-wrapper">
                 <li class="swiper-slide">
                   <button
@@ -417,9 +414,13 @@
             Frequently Asked Questions
           </h2>
           <ul class="c-faq-accordion__list">
-            <li class="c-faq-accordion__item">
+            <li class="c-faq-accordion__item" data-faq-accordion-item>
               <h3 class="c-faq-accordion__question">
-                <button class="c-faq-accordion__toggle">
+                <button
+                  class="c-faq-accordion__toggle"
+                  aria-expanded="false"
+                  data-faq-accordion-toggle
+                >
                   What is Netflix?
                   <svg
                     class="c-faq-accordion__icon"
@@ -431,7 +432,7 @@
                   </svg>
                 </button>
               </h3>
-              <p class="c-faq-accordion__answer">
+              <p class="c-faq-accordion__answer" data-faq-accordion-answer>
                 Netflix is a streaming service that offers a wide variety of
                 award-winning TV shows, movies, anime, documentaries and more –
                 on thousands of internet-connected devices.
@@ -442,9 +443,13 @@
                 every week!
               </p>
             </li>
-            <li class="c-faq-accordion__item">
+            <li class="c-faq-accordion__item" data-faq-accordion-item>
               <h3 class="c-faq-accordion__question">
-                <button class="c-faq-accordion__toggle">
+                <button
+                  class="c-faq-accordion__toggle"
+                  aria-expanded="false"
+                  data-faq-accordion-toggle
+                >
                   How much does Netflix costs?
                   <svg
                     class="c-faq-accordion__icon"
@@ -456,15 +461,19 @@
                   </svg>
                 </button>
               </h3>
-              <p class="c-faq-accordion__answer">
+              <p class="c-faq-accordion__answer" data-faq-accordion-answer>
                 Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
                 streaming device, all for one fixed monthly fee. Plans range
                 from ₹149 to ₹649/month.
               </p>
             </li>
-            <li class="c-faq-accordion__item">
+            <li class="c-faq-accordion__item" data-faq-accordion-item>
               <h3 class="c-faq-accordion__question">
-                <button class="c-faq-accordion__toggle">
+                <button
+                  class="c-faq-accordion__toggle"
+                  aria-expanded="false"
+                  data-faq-accordion-toggle
+                >
                   Where can I watch?
                   <svg
                     class="c-faq-accordion__icon"
@@ -476,7 +485,7 @@
                   </svg>
                 </button>
               </h3>
-              <p class="c-faq-accordion__answer">
+              <p class="c-faq-accordion__answer" data-faq-accordion-answer>
                 Watch anywhere, anytime. Sign in with your Netflix account to
                 watch instantly on the web at netflix.com from your personal
                 computer or on any internet-connected device that offers the
@@ -488,9 +497,13 @@
                 without an internet connection. Take Netflix with you anywhere.
               </p>
             </li>
-            <li class="c-faq-accordion__item">
+            <li class="c-faq-accordion__item" data-faq-accordion-item>
               <h3 class="c-faq-accordion__question">
-                <button class="c-faq-accordion__toggle">
+                <button
+                  class="c-faq-accordion__toggle"
+                  aria-expanded="false"
+                  data-faq-accordion-toggle
+                >
                   How do I cancel?
                   <svg
                     class="c-faq-accordion__icon"
@@ -502,15 +515,19 @@
                   </svg>
                 </button>
               </h3>
-              <p class="c-faq-accordion__answer">
+              <p class="c-faq-accordion__answer" data-faq-accordion-answer>
                 Netflix is flexible. You can easily cancel your account online
                 in two clicks. There are no cancellation fees – start or stop
                 your account anytime.
               </p>
             </li>
-            <li class="c-faq-accordion__item">
+            <li class="c-faq-accordion__item" data-faq-accordion-item>
               <h3 class="c-faq-accordion__question">
-                <button class="c-faq-accordion__toggle">
+                <button
+                  class="c-faq-accordion__toggle"
+                  aria-expanded="false"
+                  data-faq-accordion-toggle
+                >
                   What can I watch on Netflix?
                   <svg
                     class="c-faq-accordion__icon"
@@ -522,15 +539,19 @@
                   </svg>
                 </button>
               </h3>
-              <p class="c-faq-accordion__answer">
+              <p class="c-faq-accordion__answer" data-faq-accordion-answer>
                 Netflix has an extensive library of feature films,
                 documentaries, shows, anime, award-winning Netflix originals,
                 and more. Watch as much as you want, anytime you want.
               </p>
             </li>
-            <li class="c-faq-accordion__item">
+            <li class="c-faq-accordion__item" data-faq-accordion-item>
               <h3 class="c-faq-accordion__question">
-                <button class="c-faq-accordion__toggle">
+                <button
+                  class="c-faq-accordion__toggle"
+                  aria-expanded="false"
+                  data-faq-accordion-toggle
+                >
                   Is Netflix good for kids?
                   <svg
                     class="c-faq-accordion__icon"
@@ -542,7 +563,7 @@
                   </svg>
                 </button>
               </h3>
-              <p class="c-faq-accordion__answer">
+              <p class="c-faq-accordion__answer" data-faq-accordion-answer>
                 The Netflix Kids experience is included in your membership to
                 give parents control while kids enjoy family-friendly TV shows
                 and films in their own space.
@@ -558,11 +579,12 @@
         <form
           class="o-section o-container c-cta-bar"
           aria-labelledby="bottom-cta-bar-title"
+          data-cta-bar
         >
-          <h3 id="bottom-cta-bar-title" class="c-cta-bar__title">
+          <h2 id="bottom-cta-bar-title" class="c-cta-bar__title">
             Ready to watch? Enter your email to create or restart your
             membership.
-          </h3>
+          </h2>
           <div class="c-cta-bar__actions">
             <div class="c-cta-bar__input">
               <label for="bottom-email-address" class="c-cta-bar__input-label">
@@ -689,18 +711,22 @@
               bot.&nbsp;<button
                 type="button"
                 class="c-footer__recaptcha-disclosure-toggle"
+                data-recaptcha-disclosure-toggle
               >
                 Learn more.
               </button>
             </p>
-            <p class="c-footer__recaptcha-disclosure">
+            <p class="c-footer__recaptcha-disclosure" data-recaptcha-disclosure>
               The information collected by Google reCAPTCHA is subject to the
               Google
               <a href="https://policies.google.com/privacy" target="_blank"
                 >Privacy Policy</a
               >
               and
-              <a href="https://policies.google.com/terms" target="_blank"
+              <a
+                href="https://policies.google.com/terms"
+                target="_blank"
+                rel="noopener noreferrer"
                 >Terms of Service</a
               >, and is used for providing, maintaining, and improving the
               reCAPTCHA service and for general security purposes (it is not

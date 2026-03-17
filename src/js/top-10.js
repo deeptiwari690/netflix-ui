@@ -2,12 +2,18 @@ import Swiper from "swiper";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 
+const SELECTOR_VIEWPORT = "[data-top-10-viewport]";
+const SELECTOR_SWIPER = "[data-top-10-swiper]";
+const BREAKPOINT_DESKTOP = "(min-width: 960px)";
+
 export function initTopTen() {
-  const viewport = document.querySelector(".c-top-10__viewport");
+  const viewport = document.querySelector(SELECTOR_VIEWPORT);
   if (!viewport) return;
 
-  const swiperEl = viewport.querySelector(".swiper");
-  const mq = window.matchMedia("(min-width: 960px)");
+  const swiperEl = viewport.querySelector(SELECTOR_SWIPER);
+  if (!swiperEl) return;
+
+  const mq = window.matchMedia(BREAKPOINT_DESKTOP);
   let swiperInstance = null;
 
   function buildSwiper() {
@@ -19,7 +25,7 @@ export function initTopTen() {
     }
 
     viewport
-      .querySelectorAll(".c-top-10__control-wrapper")
+      .querySelectorAll("[data-top-10-control-wrapper]")
       .forEach((el) => el.remove());
 
     let prevBtn = null;
@@ -30,8 +36,9 @@ export function initTopTen() {
       prevWrapper.className =
         "c-top-10__control-wrapper c-top-10__control-wrapper--prev";
       prevWrapper.setAttribute("aria-hidden", "true");
+      prevWrapper.dataset.top10ControlWrapper = "";
       prevWrapper.innerHTML = `
-        <button type="button" class="c-top-10__control c-top-10__control--prev" aria-label="Scroll left">
+        <button type="button" class="c-top-10__control c-top-10__control--prev" aria-label="Scroll left" data-top-10-control-prev>
           <svg width="24" height="24" aria-hidden="true">
             <use href="/icons.svg#icon-chevron-left"></use>
           </svg>
@@ -41,8 +48,9 @@ export function initTopTen() {
       nextWrapper.className =
         "c-top-10__control-wrapper c-top-10__control-wrapper--next";
       nextWrapper.setAttribute("aria-hidden", "true");
+      nextWrapper.dataset.top10ControlWrapper = "";
       nextWrapper.innerHTML = `
-        <button type="button" class="c-top-10__control c-top-10__control--next" aria-label="Scroll right">
+        <button type="button" class="c-top-10__control c-top-10__control--next" aria-label="Scroll right" data-top-10-control-next>
           <svg width="24" height="24" aria-hidden="true">
             <use href="/icons.svg#icon-chevron-right"></use>
           </svg>
@@ -51,8 +59,8 @@ export function initTopTen() {
       viewport.insertBefore(prevWrapper, swiperEl);
       viewport.appendChild(nextWrapper);
 
-      prevBtn = prevWrapper.querySelector(".c-top-10__control--prev");
-      nextBtn = nextWrapper.querySelector(".c-top-10__control--next");
+      prevBtn = prevWrapper.querySelector("[data-top-10-control-prev]");
+      nextBtn = nextWrapper.querySelector("[data-top-10-control-next]");
     }
 
     swiperInstance = new Swiper(swiperEl, {

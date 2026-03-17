@@ -1,18 +1,19 @@
+const SELECTOR_FAQ_ITEM = "[data-faq-accordion-item]";
+const SELECTOR_FAQ_TOGGLE = "[data-faq-accordion-toggle]";
+const SELECTOR_FAQ_ANSWER = "[data-faq-accordion-answer]";
+
 export function initFaqAccordion() {
-  const items = document.querySelectorAll(".c-faq-accordion__item");
+  const items = document.querySelectorAll(SELECTOR_FAQ_ITEM);
 
   items.forEach((item) => {
-    const toggle = item.querySelector(".c-faq-accordion__toggle");
-    const question = item.querySelector(".c-faq-accordion__question");
-    const answer = item.querySelector(".c-faq-accordion__answer");
+    const toggle = item.querySelector(SELECTOR_FAQ_TOGGLE);
+    const answer = item.querySelector(SELECTOR_FAQ_ANSWER);
 
-    toggle.setAttribute("aria-expanded", "false");
+    if (!toggle || !answer) return;
 
     toggle.addEventListener("click", () => {
       const isExpanded = toggle.getAttribute("aria-expanded") === "true";
-
       toggle.setAttribute("aria-expanded", String(!isExpanded));
-      question.setAttribute("data-expanded", String(!isExpanded));
       answer.setAttribute("data-expanded", String(!isExpanded));
     });
   });
