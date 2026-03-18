@@ -1,18 +1,20 @@
-const SELECTOR_TOGGLE = "[data-recaptcha-disclosure-toggle]";
+const SELECTOR_TRIGGER = "[data-recaptcha-disclosure-trigger]";
 const SELECTOR_DISCLOSURE = "[data-recaptcha-disclosure]";
 
 export function initRecaptchaDisclosure() {
-  const toggle = document.querySelector(SELECTOR_TOGGLE);
+  const trigger = document.querySelector(SELECTOR_TRIGGER);
   const disclosure = document.querySelector(SELECTOR_DISCLOSURE);
 
-  if (!toggle || !disclosure) return;
+  if (!trigger || !disclosure) return;
 
-  toggle.addEventListener(
+  trigger.addEventListener(
     "click",
     () => {
-      disclosure.setAttribute("data-expanded", "true");
-      toggle.remove();
+      disclosure.dataset.expanded = "true";
+      trigger.remove();
     },
     { once: true },
   );
 }
+
+

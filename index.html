@@ -709,14 +709,19 @@
             <p>
               This page is protected by Google reCAPTCHA to ensure you're not a
               bot.&nbsp;<button
+                class="c-footer__recaptcha-disclosure-trigger"
                 type="button"
-                class="c-footer__recaptcha-disclosure-toggle"
-                data-recaptcha-disclosure-toggle
+                data-recaptcha-disclosure-trigger
+                aria-controls="recaptcha-disclosure"
               >
                 Learn more.
               </button>
             </p>
-            <p class="c-footer__recaptcha-disclosure" data-recaptcha-disclosure>
+            <p
+              class="c-footer__recaptcha-disclosure"
+              id="recaptcha-disclosure"
+              data-recaptcha-disclosure
+            >
               The information collected by Google reCAPTCHA is subject to the
               Google
               <a href="https://policies.google.com/privacy" target="_blank"

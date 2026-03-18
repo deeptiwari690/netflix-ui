@@ -53,7 +53,7 @@
   color: var(--clr-text-links);
 }
 
-.c-footer__recaptcha-disclosure-toggle {
+.c-footer__recaptcha-disclosure-trigger {
   color: var(--clr-text-links);
   text-decoration: underline;
   cursor: pointer;
