@@ -63,7 +63,7 @@
   margin-top: 16px;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease-out;
 }
 
 .c-footer__recaptcha-disclosure[data-expanded="true"] {
