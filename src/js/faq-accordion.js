@@ -14,7 +14,7 @@ export function initFaqAccordion() {
     toggle.addEventListener("click", () => {
       const isExpanded = toggle.getAttribute("aria-expanded") === "true";
       toggle.setAttribute("aria-expanded", String(!isExpanded));
-      answer.setAttribute("data-expanded", String(!isExpanded));
+      answer.dataset.expanded = String(!isExpanded);
     });
   });
 }
