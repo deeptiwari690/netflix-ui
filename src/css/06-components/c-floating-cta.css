@@ -59,3 +59,9 @@
 .c-floating-cta__btn {
   min-height: 2.5rem;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .c-floating-cta, .c-floating-cta--visible {
+    transition: none;
+  }
+}
