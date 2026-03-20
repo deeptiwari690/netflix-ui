@@ -9,8 +9,8 @@
   transform: translateY(100%);
   pointer-events: none;
   transition:
-    opacity 300ms ease-in,
-    transform 300ms ease-in;
+    opacity 3s ease-in,
+    transform 3s ease-in;
 }
 
 .c-floating-cta::after {
@@ -43,6 +43,9 @@
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
+  transition:
+    opacity 0.3s ease-out,
+    transform 0.3s ease-out;
 }
 
 @media (min-width: 600px) {
