@@ -8,16 +8,19 @@ export function initFloatingCta() {
       Get Started
     </button>
   `;
-  document.body.appendChild(floatingCta);
+  document.body.append(floatingCta);
 
   const triggers = document.querySelectorAll(SELECTOR_CTA_TRIGGER);
 
   if (!triggers.length) return;
 
-  const observer = new IntersectionObserver((entries) => {
-    const anyVisible = entries.some((entry) => entry.isIntersecting);
-    floatingCta.classList.toggle("c-floating-cta--visible", !anyVisible);
-  });
+  const observer = new IntersectionObserver(
+    (entries) => {
+      const anyVisible = entries.some((entry) => entry.isIntersecting);
+      floatingCta.classList.toggle("c-floating-cta--visible", !anyVisible);
+    },
+    { rootMargin: "65px 0px 0px 0px" },
+  );
 
   triggers.forEach((trigger) => observer.observe(trigger));
 }
