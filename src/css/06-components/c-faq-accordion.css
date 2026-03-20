@@ -105,4 +105,5 @@
 .c-faq-accordion__answer[data-expanded="true"] {
   max-height: none;
   padding: 1.5rem;
+  margin-top: 2px;
 }
