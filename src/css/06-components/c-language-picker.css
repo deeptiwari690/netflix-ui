@@ -16,7 +16,6 @@
   width: 1rem;
   height: 1rem;
   pointer-events: none;
-  z-index: 1;
 }
 
 .c-language-picker__caret-icon {
@@ -27,7 +26,6 @@
   width: 1rem;
   height: 1rem;
   pointer-events: none;
-  z-index: 1;
 }
 
 .c-language-picker__select {

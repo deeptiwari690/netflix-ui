@@ -1,6 +1,7 @@
 :root {
   --z-root__hero: 1;
   --z-root__page-body: 2;
+  --z-root__floating-cta: 3;
 
   --z-hero__lighting: 1;
   --z-hero__header: 3;
@@ -17,6 +18,4 @@
 
   --z-hero-inner__core: 2;
   --z-hero-inner__arch: 1;
-
-  --z-floating-cta: 4;
 }
