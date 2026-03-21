@@ -54,7 +54,6 @@
 
 .c-top-10__btn {
   position: relative;
-  z-index: var(--z-page-body__top-10-btn);
   padding: 0;
   background-color: var(--clr-poster-bg);
   border: none;
@@ -66,7 +65,6 @@
 @media (any-hover: hover) {
   .c-top-10__btn:hover {
     transform: scale(1.05);
-    z-index: var(--z-page-body__top-10-btn--hover);
   }
 }
 
@@ -102,7 +100,6 @@
 
 .c-top-10__rank {
   position: absolute;
-  z-index: var(--z-top-10-btn__rank);
   font-size: 4rem;
   left: -0.625rem;
   bottom: 0.625rem;
