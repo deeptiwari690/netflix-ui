@@ -57,7 +57,7 @@
   transform: translateY(-50%);
   color: var(--clr-text-secondary);
   pointer-events: none;
-  transition: all 0.2s ease;
+  transition: all 0.25s ease;
   font-size: 1rem;
 }
 
