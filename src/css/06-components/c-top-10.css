@@ -58,7 +58,7 @@
   background-color: var(--clr-poster-bg);
   border: none;
   border-radius: 0.5rem;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-out;
   cursor: pointer;
 }
 
