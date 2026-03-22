@@ -3,7 +3,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: var(--z-floating-cta);
+  z-index: var(--z-root__floating-cta);
   padding: 1.5rem;
   opacity: 0;
   transform: translateY(100%);
@@ -61,7 +61,8 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .c-floating-cta, .c-floating-cta--visible {
+  .c-floating-cta,
+  .c-floating-cta--visible {
     transition: none;
   }
 }
