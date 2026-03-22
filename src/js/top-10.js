@@ -24,43 +24,32 @@ export function initTopTen() {
       swiperInstance = null;
     }
 
-    viewport
-      .querySelectorAll("[data-top-10-control-wrapper]")
-      .forEach((el) => el.remove());
-
     let prevBtn = null;
     let nextBtn = null;
 
     if (isDesktop) {
-      const prevWrapper = document.createElement("div");
-      prevWrapper.className =
-        "c-top-10__control-wrapper c-top-10__control-wrapper--prev";
-      prevWrapper.setAttribute("aria-hidden", "true");
-      prevWrapper.dataset.top10ControlWrapper = "";
-      prevWrapper.innerHTML = `
-        <button type="button" class="c-top-10__control c-top-10__control--prev" aria-label="Scroll left" data-top-10-control-prev>
-          <svg width="24" height="24" aria-hidden="true">
-            <use href="/icons.svg#icon-chevron-left"></use>
-          </svg>
-        </button>`;
+      prevBtn = document.createElement("button");
+      prevBtn.className = "c-top-10__control c-top-10__control--prev";
+      prevBtn.setAttribute("type", "button");
+      prevBtn.setAttribute("aria-label", "Scroll left");
+      prevBtn.setAttribute("data-top-10-control-prev", "");
+      prevBtn.innerHTML = `
+        <svg class="c-top-10__control-icon" width="24" height="24" aria-hidden="true">
+          <use href="/icons.svg#icon-chevron-left"></use>
+        </svg>`;
 
-      const nextWrapper = document.createElement("div");
-      nextWrapper.className =
-        "c-top-10__control-wrapper c-top-10__control-wrapper--next";
-      nextWrapper.setAttribute("aria-hidden", "true");
-      nextWrapper.dataset.top10ControlWrapper = "";
-      nextWrapper.innerHTML = `
-        <button type="button" class="c-top-10__control c-top-10__control--next" aria-label="Scroll right" data-top-10-control-next>
-          <svg width="24" height="24" aria-hidden="true">
-            <use href="/icons.svg#icon-chevron-right"></use>
-          </svg>
-        </button>`;
+      nextBtn = document.createElement("button");
+      nextBtn.className = "c-top-10__control c-top-10__control--next";
+      nextBtn.setAttribute("type", "button");
+      nextBtn.setAttribute("aria-label", "Scroll right");
+      nextBtn.setAttribute("data-top-10-control-next", "");
+      nextBtn.innerHTML = `
+        <svg class="c-top-10__control-icon" width="24" height="24" aria-hidden="true">
+          <use href="/icons.svg#icon-chevron-right"></use>
+        </svg>`;
 
-      viewport.insertBefore(prevWrapper, swiperEl);
-      viewport.appendChild(nextWrapper);
-
-      prevBtn = prevWrapper.querySelector("[data-top-10-control-prev]");
-      nextBtn = nextWrapper.querySelector("[data-top-10-control-next]");
+      viewport.insertBefore(prevBtn, swiperEl);
+      viewport.appendChild(nextBtn);
     }
 
     swiperInstance = new Swiper(swiperEl, {
