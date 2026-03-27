@@ -16,7 +16,7 @@ and accessible JavaScript interactions.
 
 - "Trending Now" Top 10 carousel (Swiper)
 
-- Touch-friendly carousel on mobile — navigation controls only shown on desktop (≥960px)
+- Touch-friendly carousel on small screens — navigation controls only shown on screens 960px and wider
 
 - Mobile-first — responsive design scaling up from 320px
 

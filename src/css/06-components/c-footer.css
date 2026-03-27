@@ -70,3 +70,9 @@
   visibility: visible;
   transition: opacity 0.5s ease-out;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .c-footer__recaptcha-disclosure[data-expanded="true"] {
+    transition: none;
+  }
+}

@@ -1,7 +1,9 @@
 .c-language-picker {
+  --clr-bg-option: rgb(22, 22, 22);
+
   position: relative;
-  background-color: rgba(var(--clr-control-bg), 0.7);
-  border: 0.0625rem solid var(--clr-control-border);
+  background-color: rgba(var(--clr-bg-control), 0.7);
+  border: 0.0625rem solid var(--clr-border-control);
   border-radius: 0.25rem;
   font-size: 1rem;
   font-weight: 400;
@@ -47,6 +49,6 @@
 }
 
 .c-language-picker__select option {
-  background-color: rgb(var(--clr-control-bg));
+  background-color: var(--clr-bg-option);
   color: var(--clr-text-primary);
 }

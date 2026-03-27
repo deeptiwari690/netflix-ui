@@ -1,13 +1,13 @@
 :root {
   /* Brand colors */
   --clr-brand-primary: #e50914;
-  --clr-brand-primary--hover: #c11119;
+  --clr-brand-primary-hover: #c11119;
 
   /* Background Colors */
   --clr-bg-primary: #000000;
   --clr-bg-secondary: #2d2d2d;
-  --clr-bg-secondary--hover: #414141;
-  --clr-control-bg: 22, 22, 22;
+  --clr-bg-secondary-hover: #414141;
+  --clr-bg-control: rgba(22, 22, 22, 0.7);
 
   /* Text colors */
   --clr-text-primary: #ffffff;
@@ -15,7 +15,7 @@
   --clr-text-links: #448ef4;
 
   /* Border colors */
-  --clr-control-border: rgb(128, 128, 128, 0.7);
+  --clr-border-control: rgb(128, 128, 128, 0.7);
 
   /* Shadow Colors */
   --clr-shadow: 0, 0, 0;

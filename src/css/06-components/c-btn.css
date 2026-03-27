@@ -14,8 +14,20 @@
   transition: background-color 0.3s ease-out;
 }
 
-.c-btn:hover {
-  background-color: var(--clr-brand-primary--hover);
+@media (prefers-reduced-motion: reduce) {
+  .c-btn {
+    transition: none;
+  }
+}
+
+.c-btn:focus-visible {
+  background-color: var(--clr-brand-primary-hover);
+}
+
+@media (any-hover: hover) {
+  .c-btn:hover {
+    background-color: var(--clr-brand-primary-hover);
+  }
 }
 
 .c-btn--full {
