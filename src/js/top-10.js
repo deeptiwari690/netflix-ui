@@ -4,9 +4,8 @@ import "swiper/css";
 
 const SELECTOR_VIEWPORT = "[data-top-10-viewport]";
 const SELECTOR_SWIPER = "[data-top-10-swiper]";
-const CLASS_HIDDEN = "c-top-10__control--hidden";
 
-const createNavButton = (direction) => {
+const createNavButton = (direction, swiperId) => {
   const isLeft = direction === "prev";
   const iconId = isLeft ? "icon-chevron-left" : "icon-chevron-right";
 
@@ -17,6 +16,7 @@ const createNavButton = (direction) => {
   ].join(" ");
   button.type = "button";
   button.setAttribute("aria-label", isLeft ? "Scroll left" : "Scroll right");
+  button.setAttribute("aria-controls", swiperId);
   button.setAttribute(`data-top-10-control-${direction}`, "");
   button.innerHTML = `
     <svg
@@ -38,8 +38,8 @@ export function initTop10() {
   const swiperEl = viewport.querySelector(SELECTOR_SWIPER);
   if (!swiperEl) return;
 
-  const prevButton = createNavButton("prev");
-  const nextButton = createNavButton("next");
+  const prevButton = createNavButton("prev", swiperEl.id);
+  const nextButton = createNavButton("next", swiperEl.id);
 
   viewport.appendChild(prevButton);
   viewport.appendChild(nextButton);
@@ -53,7 +53,6 @@ export function initTop10() {
     navigation: {
       prevEl: prevButton,
       nextEl: nextButton,
-      disabledClass: CLASS_HIDDEN,
     },
   });
 }
